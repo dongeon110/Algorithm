@@ -61,7 +61,7 @@ class Solution {
 			if (gyojum[0] < minx) minx = gyojum[0];
 			if (gyojum[0] > maxx) maxx = gyojum[0];
 			if (gyojum[1] < miny) miny = gyojum[1];
-			if (gyojum[1] < maxy) maxy = gyojum[1];
+			if (gyojum[1] > maxy) maxy = gyojum[1];
 		}
 
 		maxX = maxx - minx;
@@ -93,13 +93,9 @@ class Solution {
 		for (int i=0; i<answer.length; i++) answer[i] = strDot; // * 찍기전 모두 .으로 크기 조절
 
 		for (int[] gyojum : gyojums) {
-			int index = maxY - gyojum[1] -1;
+			int index = maxY - gyojum[1];
 			String newStar = drawStar(answer[index], gyojum[0]);
 			answer[index] = newStar;
-		}
-
-		for (String a : answer) {
-			System.out.println(a);
 		}
         return answer;
     }
