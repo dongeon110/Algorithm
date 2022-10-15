@@ -83,6 +83,7 @@ class Solution {
 		return newString;
 	}
 
+	
     public String[] solution(int[][] line) {
     	ArrayList<int[]> gyojums = findGyojum(line);
 		gyojums = fixGyojums(gyojums);
