@@ -3,7 +3,7 @@ package programmers.lv2.quiz87377;
 import java.util.ArrayList;
 
 public class MySolution {
-	
+	// Test
 	public static void main(String[] args) {
 		
 		int[][] line = {{2, -1, 4}, {-2, -1, 4}, {0, -1, 1}, {5, -8, -12}, {5, 8, 12}};
@@ -19,7 +19,7 @@ class Solution {
 
 	int maxX;
 	int maxY;
-
+	// 교점 찾기
 	ArrayList<int[]> findGyojum(int[][] line) {
 		/* 교점 좌표 
 		 * Ax + By + E = 0
@@ -50,7 +50,7 @@ class Solution {
 		}
 		return gyojums;
 	}
-
+	// 교점 
 	ArrayList<int[]> fixGyojums(ArrayList<int[]> gyojums) {
 		int minx = gyojums.get(0)[0];
 		int maxx = gyojums.get(0)[0];
@@ -74,7 +74,7 @@ class Solution {
 
 		return gyojums;
 	}
-
+	// 그리기
 	String drawStar(String before, int index) {
 		StringBuilder sb = new StringBuilder(before);
 		char star = '*';
@@ -83,7 +83,7 @@ class Solution {
 		return newString;
 	}
 
-	
+	// 솔루션
     public String[] solution(int[][] line) {
     	ArrayList<int[]> gyojums = findGyojum(line);
 		gyojums = fixGyojums(gyojums);
