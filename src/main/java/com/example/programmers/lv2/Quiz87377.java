@@ -3,19 +3,6 @@ package com.example.programmers.lv2;
 import java.util.ArrayList;
 
 public class Quiz87377 {
-    // Test
-    public static void main(String[] args) {
-
-        int[][] line = {{2, -1, 4}, {-2, -1, 4}, {0, -1, 1}, {5, -8, -12}, {5, 8, 12}};
-        Solution solution = new Solution();
-        String[] answer = solution.solution(line);
-        for (String ans : answer) System.out.println(ans);
-
-    }
-}
-
-
-class Solution {
 
     int maxX;
     int maxY;
